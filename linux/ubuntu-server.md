@@ -19,3 +19,7 @@ sudo apt install -y curl wget vim nano  net-tools dnsutils
 ## Étape 3 : Check
 
 timedatectl
+
+df
+
+ip a
