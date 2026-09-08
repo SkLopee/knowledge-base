@@ -1,3 +1,5 @@
+Version : Ubuntu 26.04.1 LTS
+
 ## Étape 1 : A la mano
 
 sudo dpkg-reconfigure keyboard-configuration
