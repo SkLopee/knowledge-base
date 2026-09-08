@@ -24,7 +24,7 @@ sudo apt install -y curl wget vim nano  net-tools dnsutils
 BLUE='\033[1;34m'; RESET='\033[0m';
 printf "\n${BLUE}===== HEURE =====${RESET}\n"; timedatectl
 printf "\n${BLUE}===== STOCKAGE =====${RESET}\n"; df -h
-printf "\n${BLUE}===== RESEAU =====${RESET}\n"; ip a
+printf "\n${BLUE}===== RESEAU =====${RESET}\n"; ip -4 -br addr
 printf "\n${BLUE}===== INTERNET =====${RESET}\n"; ping -c 1 8.8.8.8
 printf "\n${BLUE}===== DNS =====${RESET}\n"; ping -c 1 google.com
 ```
