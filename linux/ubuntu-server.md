@@ -6,4 +6,6 @@ sudo systemctl restart keyboard-setup
 
 sudo apt update && sudo apt install -y openssh-server
 
+ip a
+
 ## Étape 2 : CC
