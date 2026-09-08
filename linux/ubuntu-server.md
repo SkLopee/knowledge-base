@@ -1,6 +1,9 @@
+## Étape 1 : A la mano
+
+sudo dpkg-reconfigure keyboard-configuration
+
+sudo systemctl restart keyboard-setup
+
 sudo apt update && sudo apt install -y openssh-server
 
-sudo systemctl enable --now ssh
-
-sudo systemctl status ssh --no-pager
-
+## Étape 2 : CC
