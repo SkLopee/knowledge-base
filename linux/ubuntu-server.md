@@ -8,6 +8,7 @@
 sudo dpkg-reconfigure keyboard-configuration
 sudo systemctl restart keyboard-setup
 sudo apt update && sudo apt install -y openssh-server
+```
 
 ip a
 
@@ -17,6 +18,7 @@ ip a
 sudo timedatectl set-timezone Europe/Paris
 sudo timedatectl set-ntp true
 sudo apt install -y curl wget vim nano  net-tools dnsutils
+```
 
 ## Étape 3 : Check
 
@@ -27,3 +29,4 @@ df
 ip a
 ping -c 1 8.8.8.8
 ping -c 1 google.com
+```
