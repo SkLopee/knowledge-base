@@ -21,9 +21,10 @@ sudo apt install -y curl wget vim nano  net-tools dnsutils
 ## Étape 3 : Check
 
 ```bash
-printf '\n===== HEURE =====\n'; timedatectl
-printf '\n===== STOCKAGE =====\n'; df -h
-printf '\n===== RESEAU =====\n'; ip a
-printf '\n===== INTERNET =====\n'; ping -c 1 8.8.8.8
-printf '\n===== DNS =====\n'; ping -c 1 google.com
+BLUE='\033[1;34m'; RESET='\033[0m';
+printf "\n${BLUE}===== HEURE =====${RESET}\n"; timedatectl
+printf "\n${BLUE}===== STOCKAGE =====${RESET}\n"; df -h
+printf "\n${BLUE}===== RESEAU =====${RESET}\n"; ip a
+printf "\n${BLUE}===== INTERNET =====${RESET}\n"; ping -c 1 8.8.8.8
+printf "\n${BLUE}===== DNS =====${RESET}\n"; ping -c 1 google.com
 ```
