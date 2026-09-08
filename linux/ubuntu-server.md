@@ -10,8 +10,6 @@ sudo systemctl restart keyboard-setup
 sudo apt update && sudo apt install -y openssh-server
 ```
 
-ip a
-
 ## Étape 2 : Configuration CC
 
 ```bash
@@ -22,11 +20,10 @@ sudo apt install -y curl wget vim nano  net-tools dnsutils
 
 ## Étape 3 : Check
 
-timedatectl
-
 ```bash
-df
-ip a
-ping -c 1 8.8.8.8
-ping -c 1 google.com
+printf '\n===== HEURE =====\n'; timedatectl
+printf '\n===== STOCKAGE =====\n'; df -h
+printf '\n===== RESEAU =====\n'; ip a
+printf '\n===== INTERNET =====\n'; ping -c 1 8.8.8.8
+printf '\n===== DNS =====\n'; ping -c 1 google.com
 ```
